@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/account_layout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/account_edit"
+            android:hint="@string/account"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/account_layout"
+        android:id="@+id/password_layout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/password_edit"
+            android:hint="@string/password"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_below="@id/password_layout"
+        android:text="@string/sign_up"
+        android:id="@+id/sign_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/testing_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sign_button"
+        android:layout_below="@+id/sign_button"
+        android:layout_marginTop="35dp"
+        android:text="Testing Add data" />
+
+    <Button
+        android:id="@+id/addFriend_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/testing_button"
+        android:layout_below="@+id/testing_button"
+        android:layout_marginTop="27dp"
+        android:text="Testing Add Friend" />
+
+    <Button
+        android:id="@+id/check_Friend_Request"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/addFriend_button"
+        android:layout_below="@+id/addFriend_button"
+        android:layout_marginTop="26dp"
+        android:text="check friend request" />
+
+    <Button
+        android:id="@+id/confirm_friend_request"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check_Friend_Request"
+        android:layout_below="@+id/check_Friend_Request"
+        android:text="Yes" />
+
+    <Button
+        android:id="@+id/reject_friend_request"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/check_Friend_Request"
+        android:layout_below="@+id/check_Friend_Request"
+        android:text="No" />
+
+    <TextView
+        android:id="@+id/friendRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/confirm_friend_request"
+        android:layout_below="@+id/confirm_friend_request"
+        android:text="Friend Request"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/frinedList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/reject_friend_request"
+        android:layout_below="@+id/reject_friend_request"
+        android:text="Friend List"
+        android:textColor="#24dd00" />
+
+
+</RelativeLayout>

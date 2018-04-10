@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Noyage</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+    <string name="log_in">log in</string>
 </resources>
